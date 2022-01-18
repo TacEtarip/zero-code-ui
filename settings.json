@@ -1,4 +1,5 @@
 {
   "toggle": true,
-  "title": "Admin"
+  "title": "Zero Code",
+  "api": "http://localhost:1600"
 }

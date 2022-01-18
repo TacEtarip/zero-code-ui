@@ -18,18 +18,18 @@
 
   .toolbar {
     & h1.app-name {
-      color: #00103e;
+      color: white;
       font-weight: 900;
     }
     .mat-icon {
-      color: #388e3c;
+      color: white;
     }
     .spacer {
       flex: 1 1 auto;
     }
   }
 
-  .sidenav-container {
+  .sidenav-container-main {
     & .mobile {
       flex: 1 0 auto;
     }
@@ -41,8 +41,16 @@
   padding: 3rem;
 }
 
-::ng-deep .mat-list-base {
-  padding: 1rem;
+.side-nav {
+  padding: 2rem 1rem;
+}
+
+.expand-content {
+  padding: 0.5rem 1rem;
+}
+
+.sidenav-container-main ::ng-deep .mat-list-base {
+  padding-top: 0;
   .mat-list-item {
     margin: 0.25rem 0;
     border-radius: 0.25rem;
@@ -73,7 +81,7 @@
 }
 
 .side-nav {
-  background-color: #00103e;
+  background-color: #01579b;
   color: white;
 }
 
@@ -99,4 +107,38 @@ input.input-right-align {
 
 .actions {
   margin-top: 1rem;
+}
+
+.list-container {
+  margin: 0.25rem 0;
+  border-radius: 0.25rem;
+  .occult {
+    display: none;
+  }
+  .exp-spacer {
+    flex: 1;
+  }
+  .expansion-element {
+    min-width: 240px;
+    &:hover {
+      background-color: rgba(233, 233, 233, 0.068);
+      cursor: pointer;
+    }
+    height: 48px;
+    span {
+      padding: 0 0.5rem;
+    }
+    .mat-icon {
+      margin-left: 0.5rem;
+    }
+    .arrow {
+      .mat-icon {
+        margin-left: 0rem;
+        margin-right: 0.5rem;
+      }
+      display: flex;
+    }
+    display: flex;
+    align-items: center;
+  }
 }

@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "template-dashboard": {
+    "zero-code-ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -26,7 +26,7 @@
             "customWebpackConfig": {
               "path": "./custom-webpack.config.js"
             },
-            "outputPath": "dist/template-dashboard",
+            "outputPath": "dist/zero-code-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -76,10 +76,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "template-dashboard:build:production"
+              "browserTarget": "zero-code-ui:build:production"
             },
             "development": {
-              "browserTarget": "template-dashboard:build:development"
+              "browserTarget": "zero-code-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "template-dashboard:build"
+            "browserTarget": "zero-code-ui:build"
           }
         },
         "test": {
@@ -106,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "template-dashboard"
+  "defaultProject": "zero-code-ui"
 }

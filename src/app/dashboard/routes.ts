@@ -1,13 +1,23 @@
 const routes = [
   {
     icon: 'description',
-    path: 'forms',
-    name: 'Forms',
+    path: 'auth/users',
+    name: 'Users',
   },
   {
-    icon: 'table_chart',
-    path: 'tables',
-    name: 'Tables',
+    icon: 'description',
+    path: 'auth/clients',
+    name: 'Clients',
+  },
+  {
+    icon: 'description',
+    path: 'auth/roles',
+    name: 'Roles',
+  },
+  {
+    icon: 'description',
+    path: 'auth/part',
+    name: 'Application Part',
   },
 ];
 
